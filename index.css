@@ -1,0 +1,8 @@
+body {
+	background-color: #e0dac3;
+	/*HEX type #, other you do: rgb(200,200,200), or rgba(100,100,100,transparency), or blue*/
+}
+
+h1 {
+	font-size: 70px;
+}
