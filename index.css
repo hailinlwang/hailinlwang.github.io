@@ -423,12 +423,29 @@
 	{
 	}
 
+	#page .title
+	{
+		margin-top: 30em;
+		text-align: center;
+	}
+
 	#page .body
 	{
-		color: red;
-		margin-left: 2.5em;
+		color: white;
+		margin-left: 15em;
+		margin-top: 2.5em;
+		margin-bottom: 2.5em;
+		margin-right: 15em;
 		padding: 3 7em 2em 3;
 	}
+
+	#page .body h2
+	{
+		color: white;
+		margin-top: 3em;
+		
+	}
+
 
 /*********************************************************************************/
 /* Content                                                                       */
