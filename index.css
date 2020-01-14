@@ -89,13 +89,16 @@
 	.image-centered
 	{
 		display: block;
-		margin: 0 0 2em 0;
+		margin: 5em 5em 5em 32em;
+		width: 50%;
+		
+		
 	}
 	
 	.image-centered img
 	{
-		margin: 0 auto;
-		width: auto;
+		
+		
 	}
 
 /*********************************************************************************/
@@ -425,27 +428,31 @@
 
 	#page .title
 	{
-		margin-top: 30em;
+		margin-top: 5em;
 		text-align: center;
 	}
 
 	#page .body
 	{
 		color: white;
-		margin-left: 15em;
-		margin-top: 2.5em;
-		margin-bottom: 2.5em;
-		margin-right: 15em;
-		padding: 3 7em 2em 3;
+		text-align: left;
+		margin: 1em 15em;
+
 	}
 
 	#page .body h2
 	{
 		color: white;
-		margin-top: 3em;
+		margin-bottom: 1em;
+		text-align: center; 
 		
 	}
 
+	#page .body ul
+	{
+		color: white;
+		text-align: left;
+	}
 
 /*********************************************************************************/
 /* Content                                                                       */
