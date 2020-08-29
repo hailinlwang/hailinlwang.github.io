@@ -89,7 +89,10 @@
 	.image-centered
 	{
 		display: block;
-		margin: 0 0 2em 0;
+		margin: auto;
+        align-content: center;
+        width: auto;
+            
 	}
 	
 	.image-centered img
