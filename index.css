@@ -54,9 +54,8 @@
 	
 	.container
 	{
-		overflow: hidden;
+		overflow: auto;
 		margin: 0em auto;
-		width: 1000px;
 	}
 	
 /*********************************************************************************/
@@ -237,19 +236,25 @@
 	.boxB,
 	.boxC
 	{
-		width: 384px;
+		width: 20%;
 	}
 
 	.boxA,
 	.boxB
 	{
 		float: left;
-		margin-right: 20px;
+		margin-right: 5%;
 	}
 	
+    .boxA
+    {
+        margin-left: 15%;
+    }
+
 	.boxC
 	{
 		float: right;
+        margin-right: 15%;
 	}
 
 /*********************************************************************************/
