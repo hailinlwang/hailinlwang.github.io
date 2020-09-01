@@ -108,6 +108,12 @@
 		
 	}
 
+    .image-logo
+    {
+        margin: 5%;
+        width: 60%;
+    }
+
 /*********************************************************************************/
 /* List Styles                                                                   */
 /*********************************************************************************/
@@ -481,7 +487,58 @@
         
 	}
 
+    /* Three columns side by side */
+    .columnExperience {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
 
+    /* Display the columns below each other instead of side by side on small screens */
+    @media screen and (max-width: 650px) {
+      .columnExperience {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    /* Add some shadows to create a card effect */
+    .cardExperience {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /* Some left and right padding inside the container */
+    .containerExperience {
+      padding: 0 16px;
+    }
+
+    /* Clear floats */
+    .containerExperience::after, .rowExperience::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .titleExperience {
+      color: grey;
+    }
+
+    .buttonExperience {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .buttonExperience:hover {
+      background-color: #555;
+    }
 
 /*********************************************************************************/
 /* Projects
@@ -547,6 +604,7 @@
 
 	#footer
 	{
+        
 	}
 
 /*********************************************************************************/
@@ -644,6 +702,11 @@
 		color: rgba(0,0,0,.5);
 	}
 
+    #three-column li a
+    {
+        font-size: 125%;
+        line-height: 700%;
+    }
 
 /*********************************************************************************/
 /* SlideShow                                                                     */
@@ -751,7 +814,8 @@
 
 /*********************************************************************************/
 /* The Deconstructed Pancake AKA Flexbox                                                  */
-/*********************************************************************************/     .pancake .parent 
+/*********************************************************************************/     
+    .pancake .parent 
     {
         display: flex;
         flex-wrap: wrap;
