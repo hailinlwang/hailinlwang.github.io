@@ -271,7 +271,8 @@
 	.tbox1,
 	.tbox2
 	{
-		width: 575px;
+        margin: 2.5%;
+        width: 15%;
 	}
 	
 	.tbox1
@@ -281,6 +282,9 @@
 
 	.tbox2
 	{
+        
+        min-width: 400px;
+        width: 75%;
 		float: right;
 	}
 
@@ -542,7 +546,7 @@
 
     #rocscience 
     {
-    
+        margin
     }
 
     #haver 
@@ -716,79 +720,81 @@
 		color: rgba(0,0,0,.5);
 	}
 
-    #three-column li a
+    #three-column ul li
     {
-        font-size: 125%;
-        line-height: 700%;
+        font-size: 100%;
+        line-height: 150%;
+        vertical-align: middle;
     }
 /*********************************************************************************/
 /* Card                                                                         */
 /*******************************************************************************/
 
-.card {
-  background-color: white;
-  box-shadow: 0 4em 8em 0 rgba(120, 120, 120, 0.2);
-  max-width: 50%;
-  margin: 0 auto;
-  text-align: center;
-}
+    .card {
+      background-color: white;
+      box-shadow: 0 4em 8em 0 rgba(120, 120, 120, 0.2);
+      max-width: 35%;
+      min-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
 
-.cardtitle {
-  color: grey;
-  font-size: 18px;
-}
+    .cardtitle {
+      color: grey;
+      font-size: 18px;
+    }
 
-cardbutton {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: .5em;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
+    cardbutton {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: .5em;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
 
-.card img {
-    padding: 10%;
-}
+    .card img {
+        padding: 1%;
+        width: 100%;
+    }
 
-.card h1 {
-    color:black;
-}
+    .card h1, .card p {
+        color:black;
+        
+        margin: 1% 5%;
+    }
 
-.card ul {
-    color:black;
-    margin: 5% 10% 5%;
-}
+    .card ul {
+        color:black;
+        
+        margin: 2.5% 5% 2%;
+    }
 
-.card ul li {
-    border: .5em;
-    margin: 1.25em 0em;
-    text-align: left;
-    list-style: disc;
-    
-}
+    .card ul li {
+        border: .5em;
+        margin: 1.25em 0em;
+        text-align: left;
+        list-style: disc;
 
-.card p {
-    color:black;
-}
+    }
 
-.card a {
-    text-decoration: none;
-    font-size: 22px;
-    color: white;
-    padding: .5em 10em;
-    text-align: center;
-    width: 100%;
-  
-}
+    .card a {
+        text-decoration: none;
+        font-size: 22px;
+        color: white;
+        padding: .5em 10em;
+        text-align: center;
+        width: 100%;
 
-cardbutton:hover, .card a:hover {
-    opacity: 0.7;
-}
+    }
+
+    cardbutton:hover, .card a:hover {
+        opacity: 0.7;
+    }
 
 /*********************************************************************************/
 /* SlideShow                                                                     */
