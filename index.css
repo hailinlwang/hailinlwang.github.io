@@ -272,7 +272,7 @@
 	.tbox2
 	{
         margin: 2.5%;
-        width: 20%;
+        width: 15%;
 	}
 	
 	.tbox1
@@ -758,7 +758,6 @@
     }
 
     .card img {
-        padding: 1%;
         width: 100%;
     }
 
