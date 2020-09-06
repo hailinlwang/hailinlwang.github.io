@@ -868,8 +868,8 @@
     /* The dots/bullets/indicators */
     .dot {
       cursor: pointer;
-      height: 15px;
-      width: 15px;
+      height: 1.5em;
+      width: 1.5em;
       margin: 0 2px;
       background-color: #bbb;
       border-radius: 50%;
@@ -923,7 +923,10 @@
 
     .spacer 
     {
-        margin: 10em;    
+        margin: 0em auto 10em;    
+        align-content: center;
+        text-align: center;
+            
     }
 
     #myBtn {
