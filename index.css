@@ -114,6 +114,53 @@
         width: 60%;
     }
 
+/*RESPONSIVE IMAGE GRID*/
+
+    .rowimagegrid {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 20%;
+      padding: 0 4px;
+    }
+
+    /* Create five equal columns that sits next to each other */
+    .columnimagegrid {
+      flex: 20%;
+      max-width: 20%;
+      padding: 0 0.5%;
+    }
+
+    .columnimagegrid img {
+      margin-top: 5%;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .columnimagegrid {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/*
+    @media screen and (max-width: 600px) {
+        
+        .rowimagegrid {
+          margin: 0 20%;
+        }
+        
+        .columnimagegrid {
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+*/
+    
+
+
 /*********************************************************************************/
 /* List Styles                                                                   */
 /*********************************************************************************/
@@ -923,10 +970,18 @@
 
     .spacer 
     {
-        margin: 0em auto 10em;    
+        margin: 0em auto 15em;    
         align-content: center;
         text-align: center;
-            
+        position: sticky;       
+    }
+
+    .spacerthin 
+    {
+        margin: 2em auto 0em;    
+        align-content: center;
+        text-align: center;
+        position: sticky;       
     }
 
     #myBtn {
