@@ -984,6 +984,14 @@
         position: sticky;       
     }
 
+    .spacerwide 
+    {
+        margin: 12em auto 0em;    
+        align-content: center;
+        text-align: center;
+        position: sticky;       
+    }
+
     #myBtn {
       display: block;
       position: fixed;
