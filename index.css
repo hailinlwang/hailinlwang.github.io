@@ -605,6 +605,87 @@
     {
     
     }
+
+.experience-entry {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.experience-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.company-logo {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+}
+
+.company-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.role-info {
+    flex-grow: 1;
+}
+
+.role-info h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.experience-content ul {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.experience-content li {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.experience-footer {
+    margin-top: auto;
+    text-align: right;
+}
+
+.company-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.company-link:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .experience-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .company-logo {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+    }
+}
+
 /*********************************************************************************/
 /* Projects
 */
