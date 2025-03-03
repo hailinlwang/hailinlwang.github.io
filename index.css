@@ -1,3 +1,66 @@
+:root {
+  /* Colors */
+  --primary-color: #2651a8;
+  --background-dark: #181818;
+  --background-darker: #111111;
+  --text-white: #FFF;
+  --text-light: rgba(255, 255, 255, 0.8);
+  --text-lighter: rgba(255, 255, 255, 0.6);
+  --text-lightest: rgba(255, 255, 255, 0.3);
+  
+  /* Social Media Colors */
+  --twitter-color: #2DAAE4;
+  --facebook-color: #39599F;
+  --dribbble-color: #C4376B;
+  --tumblr-color: #31516A;
+  --rss-color: #F2600B;
+  
+  /* Spacing */
+  --spacing-xs: 0.5em;
+  --spacing-sm: 1em;
+  --spacing-md: 2em;
+  --spacing-lg: 5em;
+  --spacing-xl: 7em;
+  
+  /* Layout */
+  --container-margin: 15%;
+  --border-radius: 6px;
+  --card-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  
+  /* Typography */
+  --font-family-main: 'Didact Gothic', sans-serif;
+  --font-size-base: 12pt;
+  --line-height-body: 180%;
+}
+
+/* Update existing styles to use variables */
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background-dark);
+  font-family: var(--font-family-main);
+  font-size: var(--font-size-base);
+  font-weight: 200;
+  color: var(--text-white);
+}
+
+p {
+  line-height: var(--line-height-body);
+}
+
+.button {
+  display: inline-block;
+  padding: var(--spacing-md) var(--spacing-lg);
+  letter-spacing: 0.10em;
+  margin-top: var(--spacing-md);
+  background: var(--primary-color);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1em;
+  color: var(--text-white);
+}
+
 	html, body
 	{
 		height: 100%;
@@ -8,11 +71,11 @@
 	{
 		margin: 0px;
 		padding: 0px;
-		background: #181818;
-		font-family: 'Didact Gothic', sans-serif;
-		font-size: 12pt;
+		background: var(--background-dark);
+		font-family: var(--font-family-main);
+		font-size: var(--font-size-base);
 		font-weight: 200;
-		color: #FFF;
+		color: var(--text-white);
 	}
 	
 	
@@ -35,7 +98,7 @@
 	
 	p
 	{
-		line-height: 180%;
+		line-height: var(--line-height-body);
 	}
 	
 	strong
@@ -221,14 +284,14 @@
 		line-height: 40px;
 		border-radius: 20px;
 		text-align: center;
-		color: #FFFFFF;
+		color: var(--text-white);
 	}
 	
-	ul.contact li a.icon-twitter:before { background: #2DAAE4; }
-	ul.contact li a.icon-facebook:before { background: #39599F; }
-	ul.contact li a.icon-dribbble:before { background: #C4376B;	}
-	ul.contact li a.icon-tumblr:before { background: #31516A; }
-	ul.contact li a.icon-rss:before { background: #F2600B; }
+	ul.contact li a.icon-twitter:before { background: var(--twitter-color); }
+	ul.contact li a.icon-facebook:before { background: var(--facebook-color); }
+	ul.contact li a.icon-dribbble:before { background: var(--dribbble-color);	}
+	ul.contact li a.icon-tumblr:before { background: var(--tumblr-color); }
+	ul.contact li a.icon-rss:before { background: var(--rss-color); }
 
 /*********************************************************************************/
 /* Button Style                                                                  */
@@ -237,16 +300,15 @@
 	.button
 	{
 		display: inline-block;
-		padding: 1em 2em 1em 2em;
+		padding: var(--spacing-md) var(--spacing-lg);
 		letter-spacing: 0.10em;
-		margin-top: 2em;
-		padding: 1.40em 3em;
-		background: #2651a8;
-		border-radius: 6px;
+		margin-top: var(--spacing-md);
+		background: var(--primary-color);
+		border-radius: var(--border-radius);
 		text-decoration: none;
 		font-weight: 700;
 		font-size: 1em;
-		color: #FFF;
+		color: var(--text-white);
 	}
 	
 	.button-alt
@@ -302,13 +364,13 @@
 	
     .boxA
     {
-        margin-left: 15%;
+        margin-left: var(--container-margin);
     }
 
 	.boxC
 	{
 		float: right;
-        margin-right: 15%;
+        margin-right: var(--container-margin);
 	}
 
 /*********************************************************************************/
@@ -556,7 +618,7 @@
 
     /* Add some shadows to create a card effect */
     .cardExperience {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: var(--card-shadow);
     }
 
     /* Some left and right padding inside the container */
@@ -866,7 +928,7 @@
 
     .card {
       background-color: white;
-      box-shadow: 0 4em 8em 0 rgba(120, 120, 120, 0.2);
+      box-shadow: var(--card-shadow);
       max-width: 35%;
       min-width: 600px;
       margin: 0 auto;
