@@ -333,7 +333,7 @@ p {
 	
 	.box1,
 	.box2,
-	.box3,
+	.box3
 	{
 		float: left;
 		margin-right: 20px;
@@ -655,7 +655,6 @@ p {
 
     #rocscience 
     {
-        margin
     }
 
     #haver 
