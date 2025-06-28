@@ -5,8 +5,8 @@
 	
 	body
 	{
-		margin: 0px;
-		padding: 0px;
+		margin: 0;
+		padding: 0;
 		background: #181818;
 		font-family: 'Didact Gothic', sans-serif;
 		font-size: 12pt;
@@ -39,6 +39,7 @@
 	
 	strong
 	{
+		/* Remove empty rule or add properties */
 	}
 	
 	a
@@ -175,7 +176,6 @@
 	.button
 	{
 		display: inline-block;
-		padding: 1em 2em 1em 2em;
 		letter-spacing: 0.10em;
 		margin-top: 2em;
 		padding: 1.40em 3em;
@@ -208,7 +208,7 @@
 	
 	.box1,
 	.box2,
-	.box3,
+	.box3
 	{
 		float: left;
 		margin-right: 20px;
