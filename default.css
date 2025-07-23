@@ -719,12 +719,17 @@ html {
     width: 600px;
     height: 350px;
     margin: 2em auto;
-    border: 2px dashed #2651a8;
-    background: rgba(38,81,168,0.05);
+    border: 2px dashed var(--primary-color);
+    background: rgba(38,81,168,0.08);
     overflow: hidden;
-    border-radius: 16px;
+    border-radius: 20px;
     min-width: 320px;
     min-height: 200px;
+    box-shadow: 0 4px 24px rgba(38,81,168,0.08);
+    transition: box-shadow 0.2s;
+}
+#skills-drag-box:hover {
+    box-shadow: 0 8px 32px rgba(38,81,168,0.18);
 }
 
 .draggable-skill {
@@ -733,9 +738,34 @@ html {
     height: 80px;
     object-fit: contain;
     cursor: grab;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
     user-select: none;
-    /* Randomize initial position with JS */
+    border: 2px solid transparent;
+    background: #fff;
+    transition: border 0.2s, box-shadow 0.2s, transform 0.1s;
+}
+.draggable-skill:active {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 4px 16px rgba(38,81,168,0.18);
+    transform: scale(1.07);
+    cursor: grabbing;
+}
+.draggable-skill:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 700px) {
+    #skills-drag-box {
+        width: 95vw;
+        height: 220px;
+        min-width: 200px;
+    }
+    .draggable-skill {
+        width: 48px;
+        height: 48px;
+    }
 }
 
